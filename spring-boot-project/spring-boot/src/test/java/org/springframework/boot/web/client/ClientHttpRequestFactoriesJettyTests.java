@@ -49,10 +49,8 @@ class ClientHttpRequestFactoriesJettyTests
 	protected boolean supportsSettingConnectTimeout() {
 		return true;
 	}
-
-	@Override
-	protected boolean supportsSettingReadTimeout() {
-		return true;
-	}
+    @Override
+	protected boolean supportsSettingReadTimeout() { return true; }
+        
 
 }
