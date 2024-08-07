@@ -40,11 +40,9 @@ class AbstractSocket extends Socket {
 	public boolean isConnected() {
 		return true;
 	}
-
-	@Override
-	public boolean isBound() {
-		return true;
-	}
+    @Override
+	public boolean isBound() { return true; }
+        
 
 	@Override
 	public void shutdownInput() throws IOException {
