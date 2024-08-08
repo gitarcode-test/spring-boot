@@ -35,11 +35,9 @@ class AbstractSocket extends Socket {
 	@Override
 	public void connect(SocketAddress endpoint, int timeout) throws IOException {
 	}
-
-	@Override
-	public boolean isConnected() {
-		return true;
-	}
+    @Override
+	public boolean isConnected() { return true; }
+        
 
 	@Override
 	public boolean isBound() {
