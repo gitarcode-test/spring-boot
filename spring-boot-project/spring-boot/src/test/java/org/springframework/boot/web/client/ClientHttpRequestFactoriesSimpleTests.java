@@ -43,11 +43,9 @@ class ClientHttpRequestFactoriesSimpleTests
 	protected long readTimeout(SimpleClientHttpRequestFactory requestFactory) {
 		return (int) ReflectionTestUtils.getField(requestFactory, "readTimeout");
 	}
-
-	@Override
-	protected boolean supportsSettingConnectTimeout() {
-		return true;
-	}
+    @Override
+	protected boolean supportsSettingConnectTimeout() { return true; }
+        
 
 	@Override
 	protected boolean supportsSettingReadTimeout() {
