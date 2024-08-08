@@ -25,11 +25,9 @@ public class EarlyInitFactoryBean implements FactoryBean<String> {
 	public void setPropertyFromConfig(String propertyFromConfig) {
 		this.propertyFromConfig = propertyFromConfig;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 	@Override
 	public Class<?> getObjectType() {
