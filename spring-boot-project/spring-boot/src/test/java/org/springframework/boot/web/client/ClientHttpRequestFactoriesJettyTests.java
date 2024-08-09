@@ -44,11 +44,9 @@ class ClientHttpRequestFactoriesJettyTests
 	protected long readTimeout(JettyClientHttpRequestFactory requestFactory) {
 		return (long) ReflectionTestUtils.getField(requestFactory, "readTimeout");
 	}
-
-	@Override
-	protected boolean supportsSettingConnectTimeout() {
-		return true;
-	}
+    @Override
+	protected boolean supportsSettingConnectTimeout() { return true; }
+        
 
 	@Override
 	protected boolean supportsSettingReadTimeout() {
