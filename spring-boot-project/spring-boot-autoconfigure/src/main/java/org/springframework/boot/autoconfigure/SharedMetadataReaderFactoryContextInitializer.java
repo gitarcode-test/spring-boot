@@ -207,11 +207,9 @@ class SharedMetadataReaderFactoryContextInitializer implements
 		public Class<?> getObjectType() {
 			return CachingMetadataReaderFactory.class;
 		}
-
-		@Override
-		public boolean isSingleton() {
-			return true;
-		}
+    @Override
+		public boolean isSingleton() { return true; }
+        
 
 		@Override
 		public void onApplicationEvent(ContextRefreshedEvent event) {
