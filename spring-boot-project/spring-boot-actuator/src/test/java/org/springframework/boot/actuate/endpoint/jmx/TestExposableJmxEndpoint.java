@@ -42,11 +42,9 @@ public class TestExposableJmxEndpoint implements ExposableJmxEndpoint {
 	public EndpointId getEndpointId() {
 		return EndpointId.of("test");
 	}
-
-	@Override
-	public boolean isEnableByDefault() {
-		return true;
-	}
+    @Override
+	public boolean isEnableByDefault() { return true; }
+        
 
 	@Override
 	public Collection<JmxOperation> getOperations() {
