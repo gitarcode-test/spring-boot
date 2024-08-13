@@ -52,11 +52,9 @@ class ClientHttpRequestFactoriesHttpComponentsTests
 			.resolve(null);
 		return socketConfig.getSoTimeout().toMilliseconds();
 	}
-
-	@Override
-	protected boolean supportsSettingConnectTimeout() {
-		return true;
-	}
+    @Override
+	protected boolean supportsSettingConnectTimeout() { return true; }
+        
 
 	@Override
 	protected boolean supportsSettingReadTimeout() {
