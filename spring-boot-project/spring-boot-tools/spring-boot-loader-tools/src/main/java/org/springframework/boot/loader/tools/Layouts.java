@@ -93,11 +93,9 @@ public final class Layouts {
 		public String getLayersIndexFileLocation() {
 			return "BOOT-INF/layers.idx";
 		}
-
-		@Override
-		public boolean isExecutable() {
-			return true;
-		}
+    @Override
+		public boolean isExecutable() { return true; }
+        
 
 	}
 
